@@ -26,7 +26,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 20px;
 line-height: 27px;
-color: #232C33;
+color: #FF0000;
 }
 h1{
   font-family: 'Nunito';
@@ -51,6 +51,18 @@ letter-spacing: 0.03em;
 text-align: left;
 color: #232C33;
 margin-bottom: 43px;
+}
+h6{
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+/* identical to box height, or 164% */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #FFFFFF;
 }
 p{
   font-family: 'Nunito';
@@ -89,6 +101,11 @@ color: #FFFFFF;
   margin: 100px auto;
 }
 .section-notis{
+  width: 100%;
+  margin: 100px auto;
+  height: max-content;
+}
+.section-tutorias{
   width: 100%;
   margin: 100px auto;
   height: max-content;
@@ -179,7 +196,19 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 
 }
-
+.footer{
+  height: 181px;
+  width: 100%;
+}
+.footer-top{
+  height: 147px;
+  background: #000000;
+ padding: 48px 80px 12px 80px;
+}
+.footer-bottom{
+  height: 34px;
+  background: #340F0F;
+}
 @media (max-width: 768px) {
   .mobile-card{
     margin: 20px auto;
@@ -201,6 +230,11 @@ color: #FFFFFF;
     margin: 20px auto;
   }
   .section-notis{
+    width: 100%;
+    margin: 20px auto;
+    height: max-content;
+  }
+  .section-tutorias{
     width: 100%;
     margin: 20px auto;
     height: max-content;
