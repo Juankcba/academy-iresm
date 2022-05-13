@@ -81,14 +81,17 @@ color: #FFFFFF;
 .section-problematicos{
   height: 640px;
   width: 100%;
+  margin: 100px auto;
 }
 .section-maticreed{
   width: 100%;
-  padding: 80px 0;
+  height: max-content;  
+  margin: 100px auto;
 }
 .section-notis{
   width: 100%;
-  padding: 80px 0;
+  margin: 100px auto;
+  height: max-content;
 }
 
 .contenedor{
@@ -99,7 +102,7 @@ color: #FFFFFF;
   align-items: center;
   flex-direction: column;
   text-align: left;
-  padding: 170px 0 150px 0;
+  
 }
 .card-maticreed{
   padding:20px;
@@ -114,9 +117,15 @@ align-items: center;
 }
 .card{
   width: 100%;
-  min-height: 360px;
-  max-height: 360px;
-  height: 360px;
+  min-height: 320px;
+  max-height: 621px;
+  height: 100%;
+}
+.card-notis{
+  width: 100%;
+  min-height: 320px;
+  max-height: 621px;
+  height: 100%;
 }
 .card-title{
   font-family: 'Nunito';
@@ -136,6 +145,12 @@ line-height: 18px;
 letter-spacing: 0.02em;
 margin-bottom: 0;
 color: #232C33;
+}
+.img-problematicos{
+  width: auto;
+  height: 640px;
+  object-fit: contain;
+  object-position:center;
 }
 .img-maticreed{
   width: auto;
@@ -163,4 +178,31 @@ letter-spacing: 0.03em;
 
 color: #FFFFFF;
 
+}
+
+@media (max-width: 768px) {
+  .mobile-card{
+    margin: 20px auto;
+  }
+  .img-problematicos{
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+    object-position:center;
+  }
+  .section-problematicos{
+    height: 640px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .section-maticreed{
+    width: 100%;
+    height: max-content;  
+    margin: 20px auto;
+  }
+  .section-notis{
+    width: 100%;
+    margin: 20px auto;
+    height: max-content;
+  }
 }
